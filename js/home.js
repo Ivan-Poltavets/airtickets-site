@@ -39,31 +39,31 @@ function search(type){
   document.getElementById("dateTextFrom").innerHTML = data.dateFrom
   document.getElementById("dateTextTo").innerHTML = data.dateTo
   if(data.to == "Барселона" | data.to == "Barcelona"){
-    image.src = "assets/barcelona_547fdf5.jpg"
+    image.src = "../assets/barcelona_547fdf5.jpg"
   }
   else if(data.to == "Париж" | data.to == "Paris"){
-    image.src = "assets/paris_a70e6.jpg"
+    image.src = "../assets/paris_a70e6.jpg"
   }
   else if(data.to == "Стамбул" | data.to == "Istanbul"){
-    image.src = "assets/istanbul_0c78b0.jpg"
+    image.src = "../assets/istanbul_0c78b0.jpg"
   }
   else if(data.to == "Рим" | data.to == "Rome"){
-    image.src = "assets/rome_8fa540d.jpg"
+    image.src = "../assets/rome_8fa540d.jpg"
   }
   else if(data.to == "Відень" || data.to == "Vienna"){
-    image.src = "assets/vienna_fdda28.jpg"
+    image.src = "../assets/vienna_fdda28.jpg"
   }
   else if(data.to == "Варшава" | data.to == "Warsaw"){
-    image.src = "assets/warsaw_e1a04.jpg"
+    image.src = "../assets/warsaw_e1a04.jpg"
   }
   else if(data.to == "Тбілісі" | data.to == "Tbilisi"){
-    image.src = "assets/tbilisi_9af213.jpg"
+    image.src = "../assets/tbilisi_9af213.jpg"
   }
   else if(data.to == "Прага" | data.to == "Prague"){
-    image.src = "assets/prague_835b.jpg"
+    image.src = "../assets/prague_835b.jpg"
   }
   else{
-    image.src = "assets/main_page_img.jpg"
+    image.src = "../assets/main_page_img.jpg"
   }
 }
 function validate(type) {
