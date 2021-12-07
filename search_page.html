@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./styles/search.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/home.js"></script>
+</head>
+<body onload="validate(true)">
+    <div class = "header">
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <img src="assets/mainlogo.PNG">
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="index.html"  class ="menu__item">Home page</a></li>
+                <li><a href="about_us.html" class ="menu__item">About us</a></li>
+                <li><a href="return.html" class ="menu__item">Refund</a></li>
+                <li><a href="contacts.html" class ="menu__item">Contacts</a></li>
+                <li><a href="faq.html" class ="menu__item">FAQ</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="search">
+            <input id="from" value="Lviv" placeholder="From">
+            <input id="to" list="cities">
+            <input type = "date" id="dateFrom">
+            <input type = "date" id="dateTo">
+            <input type = "number" id = "passenger">
+            <button onclick="search(false)">Search</button>
+            <datalist id="cities">
+                <option>Barcelona</option>
+                <option>Tbilisi</option>
+                <option>Istanbul</option>
+                <option>Paris</option>
+                <option>Rome</option>
+                <option>Vienna</option>
+            </datalist>
+        </div>
+    </div>
+    <div class="result">
+        <div class="block_result" id="result">
+            <div class="price">
+                <div class="text-price">
+                    <img class="ticket" src="ticket-solid.svg">
+                    <p id="price">1399 грн</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div class="text">
+                <p class="date" id="dateTextFrom">19.12.2021</p>
+                <p class="time">23:40</p>
+                <p class="city" id="ticket_from">Львів</p>
+            </div>
+            <div class="text">
+                <p class="date" id="dateTextTo">20.12.2021</p>
+                <p class="time">08:40</p>
+                <p class="city" id="ticket_to">Барселона</p>
+            </div>
+            <div class="image">
+                <img src="" id="ticket_image">
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer >
+        <div class="end__block_start">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Popular questions</a></li>
+            <li><a href="#">Reviews</a></li>
+        </div>
+        <div class="end__block_end">
+            <li>admin@avia-tickets.com</li>
+            <li>Lviv,street Gorbachova 18</li>
+            <li>&#169 2021 avia-tickets</li>
+        </div>
+    </footer>
+</body>
+</html>

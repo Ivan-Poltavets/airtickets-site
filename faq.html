@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+    <link href="./styles/faq.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script>
+        function show(id){
+            for(let i = 0;i<=document.getElementsByClassName(id).length;i++){
+                if(document.getElementsByClassName(id)[i].style.display == 'block'){
+                    document.getElementsByClassName(id)[i].style.display = 'none'
+                }
+                else{
+                    document.getElementsByClassName(id)[i].style.display='block'
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class = "header">
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <img src="assets/mainlogo.PNG">
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="index.html"  class ="menu__item">Home page</a></li>
+                <li><a href="about_us.html" class ="menu__item">About us</a></li>
+                <li><a href="return.html" class ="menu__item">Refund</a></li>
+                <li><a href="contacts.html" class ="menu__item">Contacts</a></li>
+                <li><a href="faq.html" class ="menu__item">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="questions">
+        <h2>Air tickets</h2>
+        <p class="quest" onclick="show('show')">What is an electronic ticket? </p>
+        <p class="show" style="display: none;">An electronic ticket is an electronic document certifying an air carriage agreement between a passenger and an airline. Unlike a paper ticket, an e-ticket is a digital entry in the airline's database. An electronic ticket does not require a special form - all information is stored in the memory of computers and, if necessary, is quickly transferred from one computer to another. In addition, the introduction of electronic ticket technologies allows passengers to buy air tickets for relatives who live in another country, saves time for buying air tickets, makes it possible to independently choose a route for themselves and pay for transportation in one click of the mouse. But the biggest advantage of an electronic ticket is that it cannot be lost. </p>
+        <p class="show" style="display: none;">Electronic tickets can be booked both in the traditional way (through operators and computer booking systems), and independently by passengers through the websites of airlines and agencies. Payment for the ticket can also be done both in the traditional way (in cash to the cashier) and by means of electronic payments. </p>
+        <p class="quest" onclick="show('show2')">What is a route sheet? </p>
+        <p class="show2" style="display: none;">Itinerary sheet is a document that contains information about the flight and is part of the agency's electronic ticket. Includes: flight segments, airport and terminal of departure and arrival of the flight, flight number, air ticket number, agency and / or airline booking number, agency and airline name, baggage allowance, form of payment, general remarks about additional services. </p>
+        <p class="show2" style="display: none;">The itinerary sheet is sent to the passenger by e-mail in the form of a file attached to the letter. The PDF format allows the agent and clients to ensure that the presentation of the content remains unchanged in transit. </p>
+        <p class="quest"onclick="show('show3')" >What documents are required for the flight? </p>
+        <p class="show3" style="display: none;">Sometimes even frequent flyers need additional information about documents and much more. This list most often includes: the passenger's passport, visa, accompanying documents, air ticket and medical insurance. </p>
+        <p class="show3" style="display: none;">If you are traveling in Ukraine or to countries that do not require a passport for Ukrainians to enter, you should pay attention that the civil internal passport is valid, with photos pasted in upon reaching 25 and 45 years old. Also, do not forget about certain periods of validity of the passport, depending on the country you wish to visit. Including a visa or accompanying documents are also included in the list of necessary travel documents - you can always check this information on the official website http://mfa.gov.ua/ua/consular-affairs/travel-advice/entering-foreign- countries. </p>
+        <p class="show3" style="display: none;">It is also worth paying attention to the child's documents - if minor children (under 16 years old) are traveling with adults, it is necessary to present the original of the child's birth certificate at customs control. Children 16 and over must have their own passport. It is also very important to pay attention to the fact that some airlines do not accept children with a birth certificate, among them BELAVIA - you must have your own travel document. </p>
+        <p class="show3" style="display: none;">To fly abroad, the child must have his own passport or be entered in the passport of one of the parents. Children traveling without parents or without one of the parents must have a notarized travel permit. </p>
+        <p class="quest" onclick="show('show4')">How to issue a ticket refund or how to change the data on the ticket? </p>
+        <p class="show4" style="display: none;">You need to apply for a refund for air tickets issued on the website e-bilet.com.ua, and you also need to provide a copy of your civil passport (page 1,2 and registration), a copy of the TIN and bank details of the payer's card for transferring funds. </p>
+        <p class="show4" style="display: none;"><b>ATTENTION!</b>
+            This form is used to request a refund for unused / partially used tickets issued at refundable rates exclusively on the website https://e-bilet.com.ua/ </p> 
+         <p class="show4" style="display: none;">Any changes / cancellations of a completed booking cannot be made from the website. To make changes / cancellations of reservations, please contact the staff by phone or online chat. For questions related to the processing of applications, you can contact the support service by e-mail admin@e-bilet.com.ua </p>
+        <p class="quest" onclick="show('show5')">What is check-in? </p>
+        <p class="show5" style="display: none;">Passengers are checked-in for the flight through a computerized passenger departure control system installed at the airport. Previously, information about issued tickets is transmitted to this system from the booking systems. When registering a passenger using an electronic ticket, it is necessary to present an identity card (passport) of the passenger, as well as, in some cases, an itinerary receipt (not necessarily, all the necessary information is already in the system).
+
+            During check-in, the passenger is issued a boarding pass indicating the time of boarding the aircraft, the boarding gate and the seat on board the aircraft. </p>
+        
+        <p class="quest" onclick="show('show6')">How do I check in for a flight? </p>
+        <p class="show6" style="display: none;">When registering a passenger using an electronic ticket, it is necessary to present an itinerary receipt (optional), all the necessary information is already in the system, a passenger's identity card (passport) is sufficient. During check-in, the passenger is issued a boarding pass indicating the time of boarding the aircraft, the boarding gate and the seat on board the aircraft. It is worth noting that each airline may have its own rules for setting the start and end times of check-in at the airport. According to the standard, check-in starts 2 hours before departure and ends 40 minutes before departure, after which boarding begins. </p>
+        <p class="quest" onclick="show('show7')">How do I check in for a flight online? </p>
+        <p class="show7" style="display: none;">There is a preliminary online registration on the airline's website, access to which opens 24 hours before departure (for some airlines, 48 ​​hours before departure, and for some low-cost airlines, 30 days before departure). If the passenger checked in for the flight on his own via the Internet, then it is necessary to print out the boarding pass or save the check-in barcode on the gadget. In any case, we recommend that you approach the check-in counter at the airport, since many airports in the world have not connected a system for reading electronic information about electronic check-in. If you are sure that the airport services will be able to read information from your electronic boarding pass, you can immediately go to passport control (if you are traveling without luggage). </p>
+        <p class="show7" style="display: none;">It is necessary to read the information on the electronic boarding pass very carefully, it is not always possible to go straight to the inspection and passport control. </p>
+        <p class="show7" style="display: none;">The boarding pass is the main document for allowing a passenger to enter the pre-flight security area and board the plane. This approach unifies the work of airport employees at the stage from passenger check-in to boarding the plane. You also need to check in your baggage at the check-in counter. </p>
+        <p class="show7" style="display: none;">In addition, some airlines provide a check-in service at a self-service terminal directly at the airport. </p>
+        <p class="quest" onclick="show('show8')">How do I get my booking number? </p>
+        <p class="show8" style="display: none;">The booking number will be sent to you in your confirmation email and will also be displayed on the order confirmation page.
+
+            On the website <a href="https://viewtrip.travelport.com/">https://viewtrip.travelport.com/</a> you can check the status of your booking. </p>
+        <p class="quest" onclick="show('show9')">Accompanying children </p>
+        <p class="show9" style="display: none;">Airlines have a special service for accompanying minor children if their parents / guardians cannot fly with the child for any reason. The exception is low-cost companies: Wizzair (a child can fly alone from the age of 14), Ryanair (a child can fly unaccompanied by an adult from the age of 16). </p>
+        <p class="quest" onclick="show('show10')">Requirements for declaration </p>
+        <p class="show10" style="display: none;">Requirements for declaring in all countries and airports are individual. Before departure, be sure to study them on the websites of the airports of departure / transit / arrival, where you can also view and download the forms. </p>
+        <p class="quest" onclick="show('show11')">Seat selection on the plane </p>
+        <p class="show11" style="display: none;">You get the seat number by checking in for a flight at the airport or online (you can choose a seat yourself). The choice of a seat in the 1st row and near emergency exits (not always an available option) for many airlines is carried out for a fee. </p>
+        <p class="quest" onclick="show('show12')">Meals on board </p>
+        <p class="show12" style="display: none;">Meals on the plane depend on the airline, the duration of the flight and the class of service. On low-cost airlines, more often than not, an additional fee will be required for lunch. You can find out if lunch is included and what is included in it from our consultants. </p>
+        
+        <h2>Charter flights </h2>
+        <p class="quest" onclick="show('show13')">What is a charter flight? </p>
+        <p class="show13" style="display: none;">Charter flights are organized by tour operators to popular resort cities. Most often, such tickets are cheaper than regular flights. With the help of a charter, you can get directly to places where regular flights do not fly. There are a number of important differences. </p>
+        <p class="quest" onclick="show('show14')">How is a charter flight different from a regular flight? </p>
+        <p class="show14" style="display: none;">On charter flights, the schedule may change without warning the passenger. The aircraft or airline selected for transportation may be changed depending on the number of tickets sold. The carrier is not responsible for ensuring flight connections. </p>
+        <p class="quest" onclick="show('show15')">When will I receive my tickets? </p>
+        <p class="show15" style="display: none;">Tickets are sent to the passenger no later than one day before departure with the time confirmed by the airline. </p>
+        <p class="quest" onclick="show('show16')">How can the departure time of a charter flight change? </p>
+        <p class="show16" style="display: none;">Changing the departure time of charter flights is quite a popular phenomenon. Tour operator, airline may change the departure time up to 24 hours. Most often, the departure time changes to a later than the original time, but there is also a transfer of the flight to an earlier time, which must be taken into account when planning your trip if you need to get to the airport from other cities. </p>
+        <p class="quest" onclick="show('show17')">Is it necessary to track the departure time of the charter flight one day before departure? </p>
+        <p class="show17" style="display: none;">Yes, you need to track your flight on the board of the airport of departure, or on the tour operator's website. </p>
+        <p class="quest" onclick="show('show18')">Can i book a ticket for a charter flight? </p>
+        <p class="show18" style="display: none;">The reservation is valid for several hours. To receive tickets, you must redeem a ticket before the end of the day of the day on which the booking was made. </p>
+        <p class="quest" onclick="show('show19')">Is it possible to refund, change in the ticket for a charter flight? </p>
+        <p class="show19" style="display: none;">Exchange or refund of tickets is not possible. It is only possible to correct errors in the spelling of the name, surname and other passport data. </p>
+        <p class="quest" onclick="show('show20')">They were not allowed to board the flight at the checkpoint due to problems with documents. </p>
+        <p class="show20" style="display: none;">The Client and / or passenger is fully responsible for ignorance and / or failure to comply with all or part of the necessary legal requirements: </p>
+        <ul class="show20" style="display: none;">
+            <li>country of departure;</li>
+            <li>transit;</li>
+            <li>stops and arrivals. </li>
+        </ul >
+        <p class="show20" style="display: none;">Directly proceeding with the purchase of the ticket (s) and the trip, the Client is obliged to make sure that all the necessary documents are in place. </p>
+        <p class="show20" style="display: none;">If there is a need for more detailed information, you can use the direct sites of the Suppliers, and / or the Site: </p>
+        <ul class="show20" style="display: none;">
+            <li>https://www.iatatravelcentre.com/</li>
+            <li>ministries of foreign affairs;</li>
+            <li>the ministry of transport of your country (country of departure). </li>
+        </ul>
+        <p class="show20" style="display: none;">The Client, when placing an Order for carriage on international flights of carriers, is obliged to ensure that he has a visa valid for the full route of the international flight being issued. </p>
+        <h2>Baggage</h2>
+        <p class="quest" onclick="show('show21')">What is Checked Baggage? </p>
+        <p class="show21" style="display: none;">Items that the passenger checks in to the hold during check-in are called checked baggage. </p>
+        <p class="show21" style="display: none;">Each airline has its own rules and regulations for the carriage of baggage, which we recommend that you familiarize yourself with on the airline's website or in the fare rules on the booking or order confirmation page. These rules determine the amount of baggage that can be transported free of charge, its maximum allowable dimensions and weight, the cost of additional, excess, oversized or non-standard baggage. </p>
+        <p class="show21" style="display: none;">Not all airlines allow a free checked baggage allowance; in most cases, carry-on baggage is allowed from 3 to 15 kg, which the passenger can take with him into the aircraft cabin, and one piece of checked baggage from 20 to 23 kg. </p>
+        <p class="quest" onclick="show('show22')">What is carry-on baggage? </p>
+        <p class="show22" style="display: none;">The things that the passenger is allowed to take with them into the cabin of the aircraft are called "carry-on luggage". </p>
+        <p class="show22" style="display: none;">Each airline has its own rules for the allowed weight of hand luggage, as well as for items that are allowed to be carried on the plane. Most often, the weight of hand luggage should not exceed 5 - 7 kg. You can get acquainted with the conditions in detail in the rules for applying the fare on the booking or order confirmation page, as well as on the airline's website. </p>
+        <ul class=show22 style="display: none;">
+            <li>umbrella cane;</li>
+            <li>correspondence for reading on the plane;</li>
+            <li>I am wearing outerwear or a blanket;</li>
+            <li>a bag with a laptop or tablet;</li>
+            <li>camera;</li>
+            <li>handbag;</li>
+            <li>goods from duty-free. </li>
+        </ul>
+        <p class="show22" style="display: none;">Together with a piece of carry-on baggage, many airlines allow you to carry for free: </p>
+        <p class="quest" onclick="show('show23')">How can I order the carriage of extra baggage? </p>
+        <p class="show23" style="display: none;">If you need to order excess (extra) baggage during working hours Mon - Fri from 09:00 to 19:00, Sat from 09:00 to 16:00, you can contact our online chat or call +380443337082 , after hours leave a request in the form on the website or email admin@e-bilet.com.ua. </p>
+        <p class="quest" onclick="show('show24')">Transportation of large and oversized baggage </p>
+        <p class="show24" style="display: none;">For the carriage of baggage that does not comply with the airline's standards, it is necessary to notify the carrier company in advance (no later than 36 hours before departure). To do this, when booking tickets, indicate the information about the overall baggage in the comments when booking / write a request to the mail or chat / call the specified phones to clarify the details and obtain complete information on transportation. </p>
+        <p class="quest" onclick="show('show25')">Transportation of animals and plants </p>
+        <p class="show25" style="display: none;">If you are planning a flight with animals, notify about this in advance when booking air tickets and check with our consultants for details. </p>
+        <p class="show25" style="display: none;">This information is for general reference only. </p>
+        <p class="show25" style="display: none;">All relevant documents must be drawn up for the animal. Also, at the airport it is necessary to go through veterinary control (in the case of transporting plants - phytocontrol). The rules do not allow the carriage of more than 2 animals per passenger. The animal must be transported in a container and weighed at the airport with it. Payment is made for the total weight of the pet + container (with the exception of guide dogs, with the presence of the relevant documents, no fee is charged for them). </p>
+        <p class="show25" style="display: none;">Be careful, it is better to clarify the details of import to each individual country at the embassy before the flight. </p>
+        <p class="show25" style="display: none;">It is forbidden to transport planting material and soil, as well as plants with roots, bulbs, tubers. </p>
+        <p class="quest" onclick="show('show26')">Carriage of liquids in carry-on baggage </p>
+        <p class="show26" style="display: none;">Carriage of liquids / gels is permitted subject to the following rules: </p>
+        <ul class="show26" style="display: none;">
+            <li>The volume of packaging with liquid / gel up to 100 ml. </li>
+            <li>Liquids / gels in carry-on baggage must be collected and packed in transparent plastic wrap (maximum allowed total amount up to 1 liter). </li>
+            <li>According to the standards for 1 passenger, no more than one such package in carry-on baggage. </li>
+            <li>Outside of the package, the passenger can carry certain products (for example, infant formula) and medicines necessary for the passenger during the flight. These liquids must be presented at the control counter at the airport. </li>
+            <li>Duty Free items (such as alcohol and / or other liquids) are allowed on board if purchased from EU international airports. In this case, the rules provide for transportation in a sealed transparent store bag with an attached product receipt, which is clearly visible in the package, and must be sealed at the point of sale. </li>
+        </ul>
+        <p class="show26" style="display: none;">Liquids that are improperly packed or in violation of the above conditions are confiscated. </p>
+        <p class="quest" onclick="show('show27')">What to do if your baggage is lost? </p>
+        <p class="show27" style="display: none;">If you lose your luggage, please contact LOST AND FOUND 24 hours a day. It is located at the airport in the arrivals area. There you can issue a PIR, indicating all contact details and information about your baggage. </p>
+        <p class="show27" style="display: none;">If the baggage is not found within 21 days, it is considered lost and you can request compensation for material damage from the airline that lost the baggage. </p>
+        <p class="show27" style="display: none;">This information is for general reference only. To clarify the details for each specific case, please contact our operators. </p>
+
+        <h2>Payment </h2>
+        <p class="quest" onclick="show('show28')">How to pay for an e-ticket? </p>
+        <p class="show28" style="display: none;"><b>Bank card Visa or Mastercard.</b>
+
+            This type of payment is available at any time of the day. You can use a debit or credit bank card, it doesn't matter. It is worth noting that you can pay with your card not only for yourself, but also for your family members, relatives or just acquaintances for the plane tickets of any airline that provides air tickets through the booking system. It is absolutely not necessary that the owner of the bank card was in the list of passengers for the flight in the generated order (in the itinerary receipt). </p>
+    </div>
+    <footer>
+        <div class="end__block_start">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Popular questions</a></li>
+            <li><a href="#">Reviews</a></li>
+        </div>
+        <div class="end__block_end">
+            <li>admin@avia-tickets.com</li>
+            <li>Lviv,street Gorbachova 18</li>
+            <li>&#169 2021 avia-tickets</li>
+        </div>
+    </footer>
+</body>
+</html>
